@@ -1,0 +1,56 @@
+// #C5BCBC
+// #9C9898
+// #656262
+// #ffffff
+// #e95e11 color principal
+
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+body {
+  // color: #191919;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: center;
+  overflow: hidden;
+}
+
+#Servicios {
+  overflow: hidden;
+}
+
+// #Contactanos {
+//   z-index: 500;
+// }
+
+@mixin mobile {
+  @media (max-width: 738px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (max-width: 1366px) {
+    @content;
+  }
+}
