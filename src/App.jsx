@@ -1,4 +1,6 @@
 import "./app.scss";
+import NewNavBar from "./components/NewNavbar/NewNavBar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Clientes from "./components/clientes/Clientes";
 import Clientes2 from "./components/clientes/Clientes2";
@@ -18,7 +20,13 @@ const App = () => {
     <div>
       <Cursor />
       <section id="Inicio">
-        <Navbar />
+        <Router>
+          <NewNavBar />
+          <Routes>
+            <Route path="/" exact />
+          </Routes>
+        </Router>
+        {/* <Navbar /> */}
         <Hero />
       </section>
       <section id="¿Quienes somos?">

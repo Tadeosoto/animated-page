@@ -1,7 +1,83 @@
 import React from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { Button } from "../ButtonContact/Button";
+import "./Newnavbar.scss";
 
 const NewNavBar = () => {
-  return <div>NewNavBar</div>;
+  const [click, setClick] = useState(false);
+  const [button, setButton] = useState(true);
+
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
+
+  const showButton = () => {
+    if (window.innerWidth <= 960) {
+      setButton(false);
+    } else {
+      setButton(true);
+    }
+  };
+
+  window.addEventListener("resize", showButton);
+  return (
+    <>
+      <nav className="new-navbar">
+        <div className="navbar-container">
+          <Link to="/" className="navbar-logo">
+            CCP <img src="hero.png" />
+          </Link>
+          <div className="menu-icon" onClick={handleClick}>
+            <i className={click ? "ph-bold ph-x" : "ph-bold ph-list"} />
+          </div>
+          <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <li className="nav-item">
+              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+                Inicio
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                to="/quienessomos"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                ¿Quienes somos?
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                to="/clientes"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                Clientes
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                to="/servicios"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                Servicios
+              </Link>
+            </li>
+            <li className="nav-item'mobile">
+              <Link
+                to="/contactanos"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                Contactanos
+              </Link>
+            </li>
+          </ul>
+          {button && <Button buttonStyle="btn-outline">CONTACTANOS</Button>}
+        </div>
+      </nav>
+    </>
+  );
 };
 
 export default NewNavBar;
