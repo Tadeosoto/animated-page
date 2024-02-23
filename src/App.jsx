@@ -14,6 +14,7 @@ import Navbar from "./components/navbar/Navbar";
 import Parallax from "./components/parallax/Parallax";
 import QuienesSomos from "./components/quienessomos/QuienesSomos";
 import Slider from "./components/slider/Slider";
+import Herov2 from "./components/herov2/Herov2";
 
 const App = () => {
   return (
@@ -23,14 +24,19 @@ const App = () => {
         <Router>
           <NewNavBar />
           <Routes>
-            <Route path="/" exact />
+            <Route path="/" exact element={<Herov2 />} />
           </Routes>
         </Router>
         {/* <Navbar /> */}
-        <Hero />
+        {/* <Hero /> */}
       </section>
       <section id="¿Quienes somos?">
-        <Parallax type="Quienes somos" />
+        <Router>
+          <Parallax />
+          <Routes>
+            <Route path="/quienesSomos" />
+          </Routes>
+        </Router>
       </section>
       <section>
         <QuienesSomos />
