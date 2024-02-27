@@ -42,11 +42,11 @@ const NewNavBar = () => {
             </li>
             <li className="nav-item">
               <Link
-                to="¿Quienes somos?"
+                to="/experiencia"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                ¿Quienes somos?
+                Experiencia
               </Link>
             </li>
             <li>

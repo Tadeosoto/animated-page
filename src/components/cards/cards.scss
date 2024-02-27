@@ -1,6 +1,12 @@
+// #C5BCBC
+// #9C9898
+// #656262
+// #ffffff
+// #e95e11 color principal
+
 .cards {
   padding: 4rem;
-  background: #fff;
+  background: linear-gradient(180deg, #656262, #9c9898);
 }
 
 h1 {
@@ -36,7 +42,7 @@ h1 {
   display: flex;
   flex-flow: column;
   width: 100%;
-  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+  box-shadow: 0 6px 20px #e95e11;
   -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
   filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
   border-radius: 10px;
@@ -94,7 +100,7 @@ h1 {
 }
 
 .cards__item__text {
-  color: #252e48;
+  color: #ffffff;
   font-size: 18px;
   line-height: 24px;
 }

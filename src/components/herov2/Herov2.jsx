@@ -19,6 +19,7 @@ const Herov2 = (props) => {
           <p>CONSORCIO CONSTRUCTOR PROFESIONAL S.A. DE C.V.(CCP)</p>
           <div className="hero-btns">
             <Button
+              href="/contactanos"
               className="btns"
               buttonStyle="btn--primary"
               buttonSize="btn--large"
