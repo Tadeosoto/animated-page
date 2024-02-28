@@ -4,6 +4,46 @@
 // #ffffff
 // #e95e11 color principal
 
+@import "../../app.scss";
+
 .experience {
-  background: #e95e11;
+  background: #f78547;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: rgb(56, 56, 56);
+  text-align: center;
+  h1 {
+    color: #ffffff;
+  }
+}
+
+.title {
+  font-size: 6em;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+
+  @include mobile {
+    font-size: 3em;
+  }
+}
+
+h3 {
+  padding-top: 0.25em;
+}
+
+h4 {
+  border-radius: 5px;
+  padding: 0.5em;
+  margin-right: 0.5em;
+}
+.vertical-timeline-element-content {
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
+    0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+  padding: 2em 3em !important;
+}
+
+.date {
+  font-size: 18px;
+  font-weight: bold;
+  color: #171717;
 }

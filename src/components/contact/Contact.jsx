@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import "./contact.scss";
 import { motion, useInView } from "framer-motion";
 // import emailjs from "@emailjs/browser";
+import transition from "../../transition";
 
 const variants = {
   initial: {
@@ -118,4 +119,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default transition(Contact);

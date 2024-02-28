@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from "react";
 import { Button } from "../ButtonContact/Button";
 import "./herov2.scss";
 import QuienesSomos from "../quienessomos/QuienesSomos";
+import transition from "../../transition";
 
 const Herov2 = (props) => {
   return (
@@ -36,4 +37,4 @@ const Herov2 = (props) => {
   );
 };
 
-export default Herov2;
+export default transition(Herov2);

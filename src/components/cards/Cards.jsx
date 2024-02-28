@@ -1,6 +1,7 @@
 import React from "react";
 import CardItem from "./CardItem";
 import "./cards.scss";
+import transition from "../../transition";
 
 const Cards = () => {
   return (
@@ -94,4 +95,4 @@ const Cards = () => {
   );
 };
 
-export default Cards;
+export default transition(Cards);

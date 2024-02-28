@@ -64,12 +64,9 @@ const QuienesSomos = () => {
         >
           <h2>Identidad</h2>
           <p>
-            Somos una empresa con sede en Jalisco dedicada a la realización de
-            proyectos y ejecución de obras electromecánicas y civiles en todo
-            México. Contamos con un equipo experimentado y comprometido que
-            brinda servicios de calidad, utilizando recursos técnicos,
-            tecnológicos y humanos para satisfacer las necesidades de nuestros
-            clientes.
+            Somos una empresa en Jalisco que realiza proyectos y obras
+            electromecánicas y civiles en todo México con equipo experto y
+            comprometido para satisfacer las necesidades de nuestros clientes.
           </p>
         </motion.div>
         <motion.div
@@ -78,10 +75,10 @@ const QuienesSomos = () => {
         >
           <h2>MISIÓN</h2>
           <p>
-            Empresa dedicada a proyectos y obras electromecánicas y civiles a
-            nivel local, regional y nacional, con altos estándares de eficiencia
-            y calidad para satisfacer necesidades del sector público y privado
-            en construcción."
+            Empresa especializada en proyectos y obras electromecánicas y
+            civiles a nivel local, regional y nacional, con altos estándares de
+            calidad y eficiencia para satisfacer las necesidades tanto del
+            sector público como del privado en construcción.
           </p>
         </motion.div>
         <motion.div
