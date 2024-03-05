@@ -38,10 +38,10 @@ const App = () => {
                 <Route path="/experiencia" exact element={<Experiencia />} />
               </Routes>
             </AnimatePresence>
-          </section>
-          {/* <footer>
+            <footer>
               <Footer />
-            </footer> */}
+            </footer>
+          </section>
         </Router>
       </div>
     </>

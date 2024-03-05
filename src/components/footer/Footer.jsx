@@ -1,21 +1,31 @@
 import React from "react";
 import "./footer.css";
-
+import { Button } from "../ButtonContact/Button";
 const Footer = () => {
   return (
     <div className="footer">
       <div className="sb__footer section__padding">
         <div className="sb__footer-links">
           <div className="sb__footer-links_div">
-            <h4> For business</h4>
+            <h4> Nos puedes visitar en:</h4>
             <a href="/employer">
-              <p>Employer</p>
+              <p>
+                Consorcio Constructor Profesional, S.A. de C.V. Jesús Reyes
+                Heroles No. 2376, Col. Patria. Guadalajara, Jalisco. C.P. 44967
+                México
+              </p>
+            </a>
+          </div>
+          <div className="sb__footer-links_div">
+            <Button>Contactanos</Button>
+            <a href="/employer">
+              <p>Teléfonos: </p>
             </a>
             <a href="/healthplan">
-              <p>Health plan</p>
+              <p>(33) 1202-2030</p>
             </a>
             <a href="/individual">
-              <p>individual</p>
+              <p>(33) 1202-2031</p>
             </a>
           </div>
           <div className="sb__footer-links_div">
