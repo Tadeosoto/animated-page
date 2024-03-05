@@ -3,6 +3,7 @@ import "./contact.scss";
 import { motion, useInView } from "framer-motion";
 // import emailjs from "@emailjs/browser";
 import transition from "../../transition";
+import Footer from "../footer/Footer";
 
 const variants = {
   initial: {
