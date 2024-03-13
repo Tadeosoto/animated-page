@@ -3,6 +3,7 @@ import { Button } from "../ButtonContact/Button";
 import "./herov2.scss";
 import QuienesSomos from "../quienessomos/QuienesSomos";
 import transition from "../../transition";
+import About from "../About/About.tsx";
 
 const Herov2 = (props) => {
   return (
@@ -10,7 +11,7 @@ const Herov2 = (props) => {
       <section>
         <div className="hero-container">
           <video autoPlay={true} loop={true} muted={true} playsInline={true}>
-            <source src="./HeroVideo.mp4" />
+            <source src="./HeroVideo2.mp4" />
           </video>
           <p>CONSORCIO CONSTRUCTOR PROFESIONAL S.A. DE C.V.(CCP)</p>
           <h1>
@@ -30,9 +31,9 @@ const Herov2 = (props) => {
           </div>
         </div>
       </section>
-      <section>
-        <QuienesSomos />
-      </section>
+      <About />
+      {/* <QuienesSomos /> */}
+      {/* <section></section> */}
     </>
   );
 };

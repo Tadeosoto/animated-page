@@ -1,0 +1,35 @@
+@import "../../app.scss";
+
+.preloader {
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  .texts-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 600px;
+    font-size: 24px;
+    font-weight: 900;
+    overflow: hidden;
+    color: #e95e11;
+
+    @include mobile {
+      height: 60px;
+      font-size: 14px;
+      flex-direction: column;
+    }
+  }
+}

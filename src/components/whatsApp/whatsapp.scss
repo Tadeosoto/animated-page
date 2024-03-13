@@ -1,0 +1,48 @@
+@import "../../app.scss";
+
+.whatsapp-container {
+  position: fixed;
+  left: 30px;
+  bottom: 24px;
+  padding: 24px;
+  animation: fade-up 1000ms forwards;
+  width: 300px;
+  z-index: 998;
+
+  @include mobile {
+    left: -15px;
+    bottom: 0px;
+  }
+
+  .whatsapp-btn {
+    display: inline-block;
+    color: #25d366;
+    transition: all 400ms;
+  }
+  span {
+    position: absolute;
+    top: 0;
+    right: 4px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: #075e54;
+    transform: rotateZ(20deg) translateX(15px);
+    opacity: 0;
+    transition: all 400ms;
+
+    @include mobile {
+      left: 0px;
+      right: 48px;
+    }
+  }
+
+  .whatsapp-btn:hover {
+    transform: scale(1.2);
+  }
+
+  .whatsapp-btn:hover + span {
+    // cursor: pointer;
+    transform: rotateZ(0deg) translateX(0px);
+    opacity: 1;
+  }
+}

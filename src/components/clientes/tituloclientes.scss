@@ -2,33 +2,36 @@
 
 .tituloClientes {
   background: linear-gradient(180deg, #ff761b, white);
+  padding-top: 70px;
   .titleContainer {
     flex: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
+
     .title {
       display: flex;
       align-items: center;
       gap: 50px;
+      font-family: "Bebas Neue", sans-serif;
 
       .renglon1 {
         color: white;
       }
 
       .renglon2 {
-        color: #ffffff;
+        color: rgb(122, 121, 121);
         @include mobile {
           color: white;
         }
       }
       h1 {
         font-size: 131px;
-        font-weight: 100;
+        font-weight: 200;
         color: rgb(8, 8, 8);
 
         @include mobile {
-          font-size: 64px;
+          font-size: 56px;
           text-align: center;
         }
         b {

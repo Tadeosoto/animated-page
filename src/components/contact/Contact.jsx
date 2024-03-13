@@ -57,7 +57,7 @@ const Contact = () => {
       whileInView="animate"
     >
       <motion.div className="textContainer" variants={variants}>
-        <motion.h1 variants={variants}>Trabajemos juntos!</motion.h1>
+        <motion.h1 variants={variants}>¡Trabajemos juntos!</motion.h1>
         <motion.div className="item" variants={variants}>
           <h2>Correo</h2>
           <span>hello@react.dev</span>
@@ -111,7 +111,9 @@ const Contact = () => {
           <input type="text" required placeholder="Nombre" name="name" />
           <input type="email" required placeholder="Email" name="email" />
           <textarea rows={8} placeholder="Mensaje" name="message" />
-          <button>Enviar</button>
+          <motion.button whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.9 }}>
+            Enviar
+          </motion.button>
           {error && "Error"}
           {success && "Success"}
         </motion.form>

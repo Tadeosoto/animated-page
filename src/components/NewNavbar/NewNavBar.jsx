@@ -1,8 +1,9 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "../ButtonContact/Button";
 import "./Newnavbar.scss";
+import { motion } from "framer-motion";
 
 const NewNavBar = () => {
   const [click, setClick] = useState(false);
@@ -19,20 +20,39 @@ const NewNavBar = () => {
     }
   };
 
+  let menuRef = useRef();
+
   useEffect(() => {
     showButton();
   }, []);
+
+  useEffect(() => {
+    let handler = (e) => {
+      if (!menuRef.current.contains(e.target)) {
+        setClick(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handler);
+
+    return () => {
+      document.removeEventListener("mousedown", handler);
+    };
+  });
 
   window.addEventListener("resize", showButton);
   return (
     <>
       <nav className="new-navbar">
-        <div className="navbar-container">
+        <div className="navbar-container" ref={menuRef}>
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             <img src="hero.png" />
           </Link>
           <div className="menu-icon" onClick={handleClick}>
-            <i className={click ? "ph-bold ph-x" : "ph-bold ph-list"} />
+            <motion.i
+              whileTap={{ scale: 0.8 }}
+              className={click ? "ph-bold ph-x" : "ph-bold ph-list"}
+            />
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
@@ -71,6 +91,15 @@ const NewNavBar = () => {
                 onClick={closeMobileMenu}
               >
                 Servicios
+              </Link>
+            </li>
+            <li className="nav-contactanos">
+              <Link
+                to="/contactanos"
+                className="nav-links-mobile"
+                onClick={closeMobileMenu}
+              >
+                Contactanos
               </Link>
             </li>
           </ul>

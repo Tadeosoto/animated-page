@@ -4,13 +4,29 @@
 // #ffffff
 // #e95e11 color principal
 
+@import "../../app.scss";
+
 .cards {
   padding: 4rem;
-  background: linear-gradient(180deg, #656262, #9c9898);
+  background-image: url("./serviciosBg2.png");
+  // background: linear-gradient(180deg, #656262, #9c9898);
+  background-color: #656262;
+  background-size: cover;
+
+  @include mobile {
+    background-image: url("./serviciosBg2mini.png");
+    background-size: contain;
+  }
 }
 
 h1 {
   text-align: center;
+  color: #ffffff;
+  font-size: 100px;
+
+  @include mobile {
+    font-size: 56px;
+  }
 }
 
 .cards__container {
@@ -29,6 +45,7 @@ h1 {
 
 .cards__items {
   margin-bottom: 24px;
+  background-color: #656262;
 }
 
 .cards__item {

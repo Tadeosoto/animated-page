@@ -1,21 +1,34 @@
+@import "../../app.scss";
+
 video {
   object-fit: cover;
   width: 100%;
   height: 100%;
   position: absolute;
   z-index: -1;
+
+  @include mobile {
+    display: none;
+  }
 }
 
 .hero-container {
   //   background: url(images/img-home.jpg) center center/cover no-repeat;
   height: 100vh;
-  width: 100%;
+  // width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   //   box-shadow: inset 0 0 0 100px rgba(0, 0, 0, 0.2);
-  object-fit: contain;
+
+  @include mobile {
+    background-image: url("./heroImg.jpeg");
+    background-size: cover;
+    object-fit: contain;
+    background-position: right;
+    justify-content: space-around;
+  }
 }
 
 .hero-container > h1 {
@@ -30,6 +43,10 @@ video {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
+  @include mobile {
+    order: 2;
+  }
 }
 
 .hero-container > p {
@@ -38,10 +55,16 @@ video {
   font-size: 28px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+
+  @include mobile {
+    color: #e95e11;
+    order: 99;
+  }
 }
 
 .hero-btns {
   margin-top: 32px;
+  order: 10;
 }
 .hero-btns .btn {
   margin: 6px;
@@ -56,17 +79,18 @@ video {
 
 @media screen and (max-width: 768px) {
   .hero-container > h1 {
-    font-size: 50px;
-    margin-top: 150px;
+    font-size: 46px;
+    margin-top: 45px;
   }
 
   .hero-container > p {
-    font-size: 25px;
+    font-size: 24px;
     text-align: center;
-    margin-top: 60px;
+    margin-top: 40px;
   }
 
   .btn {
     width: 100%;
+    border: solid 1px;
   }
 }

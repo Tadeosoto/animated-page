@@ -1,6 +1,9 @@
 import React from "react";
 import "./footer.css";
 import { Button } from "../ButtonContact/Button";
+import { motion } from "framer-motion";
+import { MapPin } from "@phosphor-icons/react";
+
 const Footer = () => {
   return (
     <div className="footer">
@@ -8,38 +11,33 @@ const Footer = () => {
         <div className="sb__footer-links">
           <div className="sb__footer-links_div">
             <h4> Nos puedes visitar en:</h4>
-            <a href="/employer">
+            <motion.a
+              whileHover={{ scale: 1.1 }}
+              href="https://www.google.com/maps/dir/20.6667776,-103.4289152/Av+Jes%C3%BAs+Reyes+Heroles+2376,+Dr+Valent%C3%ADn+G%C3%B3mez+Farias,+44967+Guadalajara,+Jal./@20.6587913,-103.4179072,13z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x8428ada26dcdccf5:0x75318f5d4058d3cd!2m2!1d-103.3826808!2d20.6238437?entry=ttu"
+            >
               <p>
-                Consorcio Constructor Profesional, S.A. de C.V. Jesús Reyes
-                Heroles No. 2376, Col. Patria. Guadalajara, Jalisco. C.P. 44967
-                México
+                <MapPin size={14} />
+                Jesús Reyes Heroles No. 2376, Col. Patria. Guadalajara, Jalisco.
+                C.P. 44967 México
               </p>
-            </a>
+            </motion.a>
           </div>
           <div className="sb__footer-links_div">
+            <p>¿interesado en nuestros servicios?</p>
+
             <Button>Contactanos</Button>
-            <a href="/employer">
-              <p>Teléfonos: </p>
-            </a>
-            <a href="/healthplan">
+          </div>
+          <div className="sb__footer-links_div">
+            <h4>Teléfonos: </h4>
+            <a href="tel:+523312022030">
               <p>(33) 1202-2030</p>
             </a>
-            <a href="/individual">
+            <a href="tel:+523312022031">
               <p>(33) 1202-2031</p>
             </a>
-          </div>
-          <div className="sb__footer-links_div">
-            <h4>Resources</h4>
+            <h4>Fax:</h4>
             <a href="/respurce">
-              <p>Resource center</p>
-            </a>
-            <h4>Resourcesss</h4>
-            <a href="/respurce">
-              <p>la cosa esta</p>
-            </a>
-            <h4>Resourceeeeees</h4>
-            <a href="/respurce">
-              <p>la cosa esta x2</p>
+              <p>(33) 3854-0677</p>
             </a>
           </div>
         </div>

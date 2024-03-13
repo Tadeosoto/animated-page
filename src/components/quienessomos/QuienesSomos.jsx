@@ -26,7 +26,7 @@ const QuienesSomos = () => {
   const isInView = useInView(ref, { margin: "-100px" });
 
   return (
-    <motion.div
+    <div
       className="quienesSomos"
       variants={variants}
       initial="initial"
@@ -64,9 +64,9 @@ const QuienesSomos = () => {
         >
           <h2>Identidad</h2>
           <p>
-            Somos una empresa en Jalisco que realiza proyectos y obras
-            electromecánicas y civiles en todo México con equipo experto y
-            comprometido para satisfacer las necesidades de nuestros clientes.
+            Somos una empresa que realiza proyectos y obras electromecánicas y
+            civiles en todo México con equipo experto y comprometido para
+            satisfacer las necesidades de nuestros clientes.
           </p>
         </motion.div>
         <motion.div
@@ -105,7 +105,7 @@ const QuienesSomos = () => {
           <li>Compromiso</li>
         </motion.div>
       </motion.div>
-    </motion.div>
+    </div>
   );
 };
 

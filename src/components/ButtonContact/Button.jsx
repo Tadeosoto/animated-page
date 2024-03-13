@@ -1,6 +1,7 @@
 import React from "react";
 import "./Button.css";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const STYLES = ["btn--primary", "btn--outline"];
 
@@ -21,13 +22,15 @@ export const Button = ({
 
   return (
     <Link to="/contactanos" className="btn-mobile">
-      <button
+      <motion.button
+        whileHover={{ scale: 1.2 }}
+        whileTap={{ scale: 0.8 }}
         className={`btn ${checkButtonStyle} ${checkButtonSize}`}
         onClick={onClick}
         type={type}
       >
         {children}
-      </button>
+      </motion.button>
     </Link>
   );
 };

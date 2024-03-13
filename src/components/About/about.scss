@@ -1,0 +1,143 @@
+@import "../../app.scss";
+
+.title-container {
+  background-image: url("./QuienesBg.jpg");
+  background-size: cover;
+  background-position: 0px -492px;
+  background-repeat: no-repeat;
+  padding-top: 90px;
+  padding-bottom: 90px;
+
+  h1 {
+    color: white;
+    word-spacing: 120px;
+    font-size: 74px;
+    @include mobile {
+      font-size: 38px;
+      // color: black;
+    }
+  }
+
+  @include mobile {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-position: 0px -72px;
+  }
+}
+.about-section {
+  background-image: url("./AboutBg.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+
+  justify-items: center;
+  gap: 60px;
+
+  padding: 6rem;
+
+  @include mobile {
+    padding: 2rem;
+  }
+  .identidad-container {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 64px;
+    padding: 6rem;
+    box-shadow: 10px 5px 5px lightgray;
+
+    @include mobile {
+      align-self: center;
+      flex-direction: column;
+      padding: 2rem;
+      gap: 24px;
+      // width: 250px;
+    }
+
+    .title-box {
+      display: flex;
+      flex-direction: column;
+
+      h2 {
+        color: #e95e11;
+        font-size: 44px;
+        text-align: center;
+
+        @include mobile {
+          font-size: 28px;
+        }
+      }
+
+      p {
+        font-size: 32px;
+
+        @include mobile {
+          font-size: 18px;
+        }
+      }
+    }
+
+    img {
+      border-radius: 20px;
+      max-width: 50%;
+      height: auto;
+      padding: 10px 10px 10px 10px;
+
+      @include mobile {
+        max-width: 300px;
+        padding: 5px;
+      }
+    }
+  }
+
+  .mision-container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+
+    // flex-basis: 33%;
+    @include mobile {
+      grid-auto-flow: row;
+      // padding: 2rem;
+    }
+
+    .text-box {
+      background-color: white;
+      box-shadow: 10px 5px 5px lightgray;
+      margin: 20px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      gap: 10px;
+
+      li {
+        font-size: 28px;
+
+        @include mobile {
+          font-size: 18px;
+        }
+      }
+
+      h2 {
+        // text-align: center;
+        color: #e95e11;
+        font-size: 42px;
+
+        @include mobile {
+          font-size: 28px;
+        }
+      }
+
+      p {
+        font-size: 24px;
+
+        @include mobile {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
