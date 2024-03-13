@@ -8,13 +8,13 @@
 
 .cards {
   padding: 4rem;
-  background-image: url("./serviciosBg2.png");
+  background-image: url("/serviciosBg2.png");
   // background: linear-gradient(180deg, #656262, #9c9898);
   background-color: #656262;
   background-size: cover;
 
   @include mobile {
-    background-image: url("./serviciosBg2mini.png");
+    background-image: url("/serviciosBg2mini.png");
     background-size: contain;
   }
 }

@@ -3,7 +3,7 @@ import { Button } from "../ButtonContact/Button";
 import "./herov2.scss";
 import QuienesSomos from "../quienessomos/QuienesSomos";
 import transition from "../../transition";
-import About from "../About/About.tsx";
+import About from "../About/About";
 
 const Herov2 = (props) => {
   return (

@@ -1,7 +1,7 @@
 @import "../../app.scss";
 
 .title-container {
-  background-image: url("./QuienesBg.jpg");
+  background-image: url("/QuienesBg.jpg");
   background-size: cover;
   background-position: 0px -492px;
   background-repeat: no-repeat;
@@ -25,7 +25,7 @@
   }
 }
 .about-section {
-  background-image: url("./AboutBg.png");
+  background-image: url("/AboutBg.png");
   background-size: cover;
   display: flex;
   flex-direction: column;
