@@ -1,7 +1,9 @@
 @import "../../app.scss";
 
 .title-container {
+  background-color: rgb(103, 131, 182);
   background-image: url("/QuienesBg.jpg");
+  background-blend-mode: darken;
   background-size: cover;
   background-position: 0px -492px;
   background-repeat: no-repeat;
@@ -25,7 +27,9 @@
   }
 }
 .about-section {
+  background-color: rgb(247, 242, 242);
   background-image: url("/AboutBg.png");
+  background-blend-mode: darken;
   background-size: cover;
   display: flex;
   flex-direction: column;

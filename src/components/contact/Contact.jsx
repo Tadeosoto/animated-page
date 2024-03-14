@@ -1,9 +1,10 @@
 import { useRef, useState } from "react";
 import "./contact.scss";
 import { motion, useInView } from "framer-motion";
-// import emailjs from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 import transition from "../../transition";
 import Footer from "../footer/Footer";
+import { MapPin } from "@phosphor-icons/react";
 
 const variants = {
   initial: {
@@ -60,15 +61,29 @@ const Contact = () => {
         <motion.h1 variants={variants}>¡Trabajemos juntos!</motion.h1>
         <motion.div className="item" variants={variants}>
           <h2>Correo</h2>
-          <span>hello@react.dev</span>
+          <span>ccp@ccp.com.mx</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Direccion</h2>
-          <span>Jesús Reyes Heroles No. 2376, Col. Patria. </span>
+          <motion.a
+            whileHover={{ scale: 1.1 }}
+            href="https://www.google.com/maps/dir/20.6667776,-103.4289152/Av+Jes%C3%BAs+Reyes+Heroles+2376,+Dr+Valent%C3%ADn+G%C3%B3mez+Farias,+44967+Guadalajara,+Jal./@20.6587913,-103.4179072,13z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x8428ada26dcdccf5:0x75318f5d4058d3cd!2m2!1d-103.3826808!2d20.6238437?entry=ttu"
+          >
+            <p>
+              <MapPin size={14} />
+              Jesús Reyes Heroles No. 2376, Col. Patria. Guadalajara, Jalisco.
+              C.P. 44967 México
+            </p>
+          </motion.a>
         </motion.div>
         <motion.div className="item" variants={variants}>
-          <h2>Telefono</h2>
-          <span>(33) 1202-2030</span>
+          <h2>Teléfonos</h2>
+          <a href="tel:+523312022030">
+            <p>(33) 1202-2030</p>
+          </a>
+          <a href="tel:+523312022031">
+            <p>(33) 1202-2031</p>
+          </a>
         </motion.div>
       </motion.div>
       <div className="formContainer">

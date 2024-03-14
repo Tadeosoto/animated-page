@@ -31,7 +31,7 @@ const Experiencia = () => {
           <h3>Comisión Federal de Electricidad</h3>
           <p>
             Construcción de la obra civil y electromecánica de la S.E Apatzingan
-            I-1A -3F-115 KV a la LT Uruapan Pot.
+            I-1A -3F-115 KV a la LT Uruapan potencia
           </p>
           <h4>Obra civil y Electromecánica</h4>
         </VerticalTimelineElement>
@@ -45,7 +45,7 @@ const Experiencia = () => {
           <h3>Caminos y puentes Federales CAPUFE</h3>
           <p>
             Cambio de sistema de alumbrado público a solar de la Plaza de cobro
-            53 Compostela Municipio de Tlajomulco de Zúñiga
+            53 Compostela Municipio de Nayarit
           </p>
           <h4>Sistema de Alumbrado Público</h4>
         </VerticalTimelineElement>

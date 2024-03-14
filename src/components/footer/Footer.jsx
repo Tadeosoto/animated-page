@@ -35,10 +35,6 @@ const Footer = () => {
             <a href="tel:+523312022031">
               <p>(33) 1202-2031</p>
             </a>
-            <h4>Fax:</h4>
-            <a href="/respurce">
-              <p>(33) 3854-0677</p>
-            </a>
           </div>
         </div>
 

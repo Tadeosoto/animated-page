@@ -32,7 +32,7 @@ const Cards = () => {
           <ul className="cards__items">
             <CardItem
               src="./focos.jpg"
-              text="Instalaciones eléctricas de baja tensión de tipo residencial, comercial e industrial"
+              text="Instalaciones eléctricas de baja tensión"
               label="Construccion"
               path="/servicios"
             />
@@ -65,26 +65,6 @@ const Cards = () => {
             <CardItem
               src="https://images.pexels.com/photos/3760532/pexels-photo-3760532.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               text="Servicios Generales de Ingenería, Construcción y Proyectos ejecutivos de Obra eléctrica"
-              label="Construccion"
-              path="/servicios"
-            />
-          </ul>
-          <ul className="cards__items">
-            <CardItem
-              src="https://images.pexels.com/photos/93400/pexels-photo-93400.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              text="Edificación"
-              label="Construccion"
-              path="/servicios"
-            />
-            <CardItem
-              src="./cimentacion.jpg"
-              text="Cimentaciones"
-              label="Construccion"
-              path="/servicios"
-            />
-            <CardItem
-              src="./torre.jpg"
-              text="Estructuras Metálicas y de Concreto"
               label="Construccion"
               path="/servicios"
             />

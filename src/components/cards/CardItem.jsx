@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Reveal from "../About/Reveal";
 
 const CardItem = (props) => {
   return (
@@ -10,7 +11,9 @@ const CardItem = (props) => {
             <img src={props.src} alt="Image" className="cards__item__img" />
           </figure>
           <div className="cards__item__info">
-            <h5 className="cards__item__text">{props.text}</h5>
+            <Reveal>
+              <h5 className="cards__item__text">{props.text}</h5>
+            </Reveal>
           </div>
         </Link>
       </li>
