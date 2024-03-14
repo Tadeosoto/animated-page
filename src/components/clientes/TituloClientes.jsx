@@ -36,7 +36,7 @@ const TituloClientes = () => {
           <h1 className="renglon2">en el sector público</h1>
         </div>
         <div className="title">
-          <h1> y privado:</h1>
+          <h1> y privado</h1>
         </div>
       </motion.div>
     </motion.div>
