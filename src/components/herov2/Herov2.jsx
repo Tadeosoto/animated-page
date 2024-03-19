@@ -13,6 +13,7 @@ const Herov2 = (props) => {
           {/* <video autoPlay={true} loop={true} muted={true} playsInline={true}>
             <source src="./HeroVideo2.mp4" />
           </video> */}
+          <p>CONSORCIO CONSTRUCTOR PROFESIONAL S.A. DE C.V.(CCP)</p>
           <h1>
             {" "}
             ¡Construyamos un <span>futuro</span> más brillante{" "}
@@ -28,7 +29,6 @@ const Herov2 = (props) => {
               CONTACTANOS
             </Button>
           </div>
-          <p>CONSORCIO CONSTRUCTOR PROFESIONAL S.A. DE C.V.(CCP)</p>
         </div>
       </section>
       <About />

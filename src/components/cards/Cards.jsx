@@ -17,7 +17,7 @@ const Cards = () => {
               path="/servicios"
             />
             <CardItem
-              src="https://images.unsplash.com/photo-1509390144018-eeaf65052242?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="./subestacionElectrica.jpg"
               text="Subestaciones Eléctricas"
               label="Construccion"
               path="/servicios"
@@ -37,7 +37,7 @@ const Cards = () => {
               path="/servicios"
             />
             <CardItem
-              src="./tablero.jpg"
+              src="./tablero2.jpg"
               text="Tableros de Distribución y Control"
               label="Construccion"
               path="/servicios"
@@ -57,7 +57,7 @@ const Cards = () => {
               path="/servicios"
             />
             <CardItem
-              src="https://images.pexels.com/photos/4657256/pexels-photo-4657256.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              src="./vozyDatos.jpg"
               text="Instalaciones de voz y datos"
               label="Construccion"
               path="/servicios"

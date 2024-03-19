@@ -63,15 +63,15 @@
     @include mobile {
       align-self: center;
       flex-direction: column;
-      padding: 2rem;
+      padding: 1rem;
       gap: 24px;
       // width: 250px;
     }
 
-    @include tablet {
-      padding: 4rem;
-      gap: 42px;
-    }
+    // @include tablet {
+    //   padding: 4rem;
+    //   gap: 42px;
+    // }
 
     .title-box {
       display: flex;
@@ -116,8 +116,8 @@
       }
 
       @include tablet {
-        max-width: 350px;
-        padding: 5px;
+        max-width: 300px;
+        // padding: 5px;
       }
     }
   }
