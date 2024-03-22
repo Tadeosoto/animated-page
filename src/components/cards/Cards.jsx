@@ -31,6 +31,12 @@ const Cards = () => {
           </ul>
           <ul className="cards__items">
             <CardItem
+              src="./torreTC.jpg"
+              text="Torres de telecomunicaciones"
+              label="Construccion"
+              path="/servicios"
+            />
+            <CardItem
               src="./focos.jpg"
               text="Instalaciones eléctricas de baja tensión"
               label="Construccion"
@@ -42,14 +48,14 @@ const Cards = () => {
               label="Construccion"
               path="/servicios"
             />
+          </ul>
+          <ul className="cards__items">
             <CardItem
-              src="./pararrayos.jpg"
+              src="./sistemaTierra.jpg"
               text="Sistemas de Tierras y Pararrayos"
               label="Construccion"
               path="/servicios"
             />
-          </ul>
-          <ul className="cards__items">
             <CardItem
               src="https://images.unsplash.com/photo-1673268256087-7383f2ab84a2"
               text="Alumbrado"
