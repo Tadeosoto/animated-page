@@ -42,12 +42,9 @@ const Footer = () => {
 
         <div className="sb__footer-below">
           <div className="sb__footer-copyright">
-            <p>
-              {new Date().getFullYear()} Consorcio Constructor Profesional.
-              Todos los derechos reservados.
-            </p>
+            <p>{new Date().getFullYear()} Consorcio Constructor Profesional.</p>
           </div>
-          <div className="sb__footer-below-links">
+          {/* <div className="sb__footer-below-links">
             <a href="/terms">
               <div>
                 <p>Terminos y condiciones</p>
@@ -68,7 +65,7 @@ const Footer = () => {
                 <p>Declaracion de cookies</p>
               </div>
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

@@ -88,6 +88,17 @@ const Experiencia = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           iconStyle={{ background: "#e95e11", color: "#fff" }}
+          icon={<Wrench size={56} />}
+          date="2022 / / Tepic, Jalisco"
+          dateClassName="date"
+        >
+          <h3>Wipro Technologies</h3>
+          <p>Servicios de mantenimiento varios</p>
+          <h4>Mantenimiento</h4>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--education"
+          iconStyle={{ background: "#e95e11", color: "#fff" }}
           icon={<Lightning size={56} />}
           date="2022 / / Zona Metropolitana,
           Altos y Chapala, Jal."
