@@ -70,7 +70,6 @@ const NewNavBar = () => {
               </Link>
             </li>
             <li>
-              {" "}
               <Link to="/" className="nav-item" onClick={closeMobileMenu}>
                 <img src="hero.png" />
               </Link>

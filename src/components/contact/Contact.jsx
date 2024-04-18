@@ -127,7 +127,7 @@ const Contact = () => {
           <input type="email" required placeholder="Email" name="email" />
           <textarea rows={8} placeholder="Mensaje" name="message" />
           <motion.button whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.9 }}>
-            Submit
+            Enviar
           </motion.button>
           {error && "Error"}
           {success && "Success"}

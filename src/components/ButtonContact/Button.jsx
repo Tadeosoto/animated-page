@@ -23,8 +23,8 @@ export const Button = ({
   return (
     <Link to="/contactanos" className="btn-mobile">
       <motion.button
-        whileHover={{ scale: 1.2 }}
-        whileTap={{ scale: 0.8 }}
+        whileHover={{ scale: 1.5 }}
+        whileTap={{ scale: 0.9 }}
         className={`btn ${checkButtonStyle} ${checkButtonSize}`}
         onClick={onClick}
         type={type}
