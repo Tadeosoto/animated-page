@@ -8,7 +8,7 @@ const Clientes = () => {
         <img src="./capece.jpg" />
         <img src="./LogoManzanillo.png" />
         <img src="./telcel.png" />
-        <img src="./cfeLogo.png/" />
+        <img src="./cfeLogo.png" />
         <img src="./logoDifGdl.png" />
         <img src="./logoWipro.png" />
         <img src="./logoJalisco.png" />
@@ -16,7 +16,7 @@ const Clientes = () => {
         <img src="./capece.jpg" />
         <img src="./LogoManzanillo.png" />
         <img src="./telcel.png" />
-        <img src="./cfeLogo.png/" />
+        <img src="./cfeLogo.png" />
         <img src="./logoDifGdl.png" />
         <img src="./logoWipro.png" />
         <img src="./logoJalisco.png" />

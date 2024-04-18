@@ -37,7 +37,7 @@ const Cards = () => {
               path="/servicios"
             />
             <CardItem
-              src="./focos.jpg"
+              src="./focos1.jpg"
               text="Instalaciones eléctricas de baja tensión"
               // label="Obra civil"
               path="/servicios"
